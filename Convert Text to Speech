@@ -1,0 +1,8 @@
+def speak(str):
+    type: ignore
+    from win32com.client import Dispatch
+    speak=Dispatch("SAPI.SpVoice")
+    speak.speak(str)            
+
+title=input("Enter Any Text:")
+speak(title)
