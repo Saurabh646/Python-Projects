@@ -1,0 +1,32 @@
+#FIND PHONE NUMBER DETAILS USING PYTHON (TRACK LOCATION)
+
+#find phone number details like,
+#name of the sim organization & the country.
+
+
+
+import phonenumbers
+
+from phonenumbers import carrier
+
+
+service_provider = phonenumbers.parse('+919878475874')
+
+	
+print(carrier.name_for_number(service_provider,'en'))
+
+
+
+
+
+
+
+import phonenumbers
+
+from phonenumbers import geocoder
+
+
+phone_number = phonenumbers.parse("+917745840021")
+	
+print(geocoder.description_for_number(phone_number,'en'))
+
